@@ -39,18 +39,21 @@ export class AppComponent {
     switch(this.operador){
       case '+':
         this.resultado = parseFloat(this.num1) + parseFloat(this.num2);
+        this.num1 = this.resultado.toString();
       break;
       case '-':
         this.resultado = parseFloat(this.num1) - parseFloat(this.num2);
+        this.num1 = this.resultado.toString();
       break;
       case '*':
         this.resultado = parseFloat(this.num1) * parseFloat(this.num2);
+        this.num1 = this.resultado.toString();
       break;
       case '/':
         this.resultado = parseFloat(this.num1) / parseFloat(this.num2);
+        this.num1 = this.resultado.toString();
       break;
     }
-    this.num1 = '';
     this.num2 = '';
     this.operador = '';
     this.operacion = false;
